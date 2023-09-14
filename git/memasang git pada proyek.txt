@@ -1,0 +1,28 @@
+cara memasang git pada proyek di komputer lokal ubuntu 22.04
+
+1. buka terminal dan arahkan ke direktori proyek
+   misal direktori proyek /var/www/system-ponpes
+   => cd /var/www/system-ponpes
+2. memasang git
+   => git init
+
+
+commit git pada setiap perubahan data
+1. periksa status git
+   => git status
+
+   ketereangan beberapa jenis status : 
+   - untracked : penambahan file
+   - modified : perubahan isi file
+
+2. masukkan semua perubahan ke git staging
+   apabila ada penambahan dan atau perubahan file,
+   => git add .
+   apabila hanya ada perubahan isi file atau status git hanya modified, maka langsung bisa commit
+
+3. commit semua perubahan yang sudah berada di git staging
+   apabila sebelumnya sudah melakukan perintah [git add .], maka
+   => git commit -m "penambahan dan perubahan file pada ..dsb.."
+   apabila sebelumnya belum melakukan perintah [git add .] dan status git adalah modified saja, maka
+   => git commit -am "penambahan dan perubahan file pada ..dsb.."
+   
