@@ -1,0 +1,36 @@
+
+1. install composer
+    => sudo apt update
+    install dependency untuk composer
+    => sudo apt install php-cli unzip
+    download dan install php composer installer
+    => curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
+    => HASH=`curl -sS https://composer.github.io/installer.sig`
+    => php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+    => sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+    test composer
+    => composer
+    => composer --version
+
+2. arahkan terminal ke direktori root server
+   misal : /var/www/html/
+   => cd /var/www/html
+
+3. buat proyek codeigniter 4 dengan composer : 
+   => composer create-project codeigniter4/appstarter nama_proyek
+   atau
+   => composer create-project codeigniter4/appstarter nama_proyek --no-dev
+
+4. jika ingin install laravel : 
+   => composer create-project laravel/laravel nama_proyek
+
+
+
+Update codeigniter dengan composer
+
+1. arahkan terminal ke direktori proyek
+   misal : /var/www/html/nama_proyek
+   => cd /var/www/html/nama_proyek
+
+2. update dengan composer
+   => composer update
