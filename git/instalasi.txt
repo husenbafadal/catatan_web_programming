@@ -1,0 +1,17 @@
+install git on ubuntu 22.04
+1. add ppa
+   => sudo add-apt-repository -y ppa:git-core/ppa
+2. update apt
+   => sudo apt update   
+3. install git
+   => sudo apt install git
+
+
+Upgrade git
+1. remove old version
+   => sudo apt remove git
+2. perbarui repository
+   => sudo apt update
+3. instal kembali git
+   => sudo apt install git
+   
